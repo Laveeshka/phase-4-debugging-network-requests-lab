@@ -63,11 +63,30 @@ developing your own process.
 - Add a new toy when the toy form is submitted
 
   - How I debugged:
+    View error in Console Tab
+    Open the Network Tab
+    View the status code 
+    View the error message in the Preview Tab
+    View the Rails API server logs
 
 - Update the number of likes for a toy
 
   - How I debugged:
+    View error in Console Tab
+    SyntaxError: Unexpected end of JSON input
+    View Headers of network request
+    Status Code is 204 No Content
+    JSON is not being rendered in the request body from the server
+    Fix update action method in Toys controller
 
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+    View error in Console Tab
+    Open the Network Tab 
+    View the Headers of network request
+    Status Code 404 Not Found
+    Open Preview tab
+    Read the exception error "#<ActionController::RoutingError: No route matches [DELETE] \"/toys/10\">"
+    View the same error in Rails API server logs
+    Add :delete action in routes for the Toy resource
